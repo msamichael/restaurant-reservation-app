@@ -15,9 +15,9 @@ A cross-platform Flutter app for restaurant discovery and reservation booking, w
 
 
 
-![Home Screen](docs/images/home screen.png)
-![Cuisine Screen](docs/images/cuisines screen.png)
-![Reservation Screen](docs/images/restaurant screen.png)
+![Home Screen](docs/images/home%20screen.PNG)
+![Cuisine Screen](docs/images/cuisine%20screen.PNG)
+![Reservation Screen](docs/images/restaurant%20screen.PNG)
 
 ## Tech Stack
 
