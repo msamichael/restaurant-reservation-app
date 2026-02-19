@@ -13,20 +13,11 @@ A cross-platform Flutter app for restaurant discovery and reservation booking, w
 
 ## Demo
 
-Add your screenshots or GIFs here.
 
-Suggested files:
-- `docs/images/home.png`
-- `docs/images/search.png`
-- `docs/images/cart.png`
-- `docs/images/profile.png`
 
-Example markdown:
-
-```md
-![Home Screen](docs/images/home.png)
-![Search Screen](docs/images/search.png)
-```
+![Home Screen](docs/images/home screen.png)
+![Cuisine Screen](docs/images/cuisines screen.png)
+![Reservation Screen](docs/images/restaurant screen.png)
 
 ## Tech Stack
 
