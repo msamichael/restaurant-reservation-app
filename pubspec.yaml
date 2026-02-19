@@ -14,6 +14,7 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
+  flutter_dotenv: ^5.2.1
   supabase_flutter: ^2.5.11
 
 dev_dependencies:
@@ -30,5 +31,6 @@ flutter:
 
   assets:
     # Add assets from the images directory to the application.
+    - .env
     - assets/images/
     

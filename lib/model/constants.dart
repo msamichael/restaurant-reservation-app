@@ -1,9 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 // Color Constants
 const kbrandColor = const Color.fromARGB(255, 35, 34, 34);
 const kgoldBrown = const Color.fromARGB(255, 251, 196, 27);
 
-// Supabase FIelds
-const ksupabaseUrl = 'https://jxnjacofhnhdvmdnidhs.supabase.co';
-const ksupabaseAnonKey= 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp4bmphY29maG5oZHZtZG5pZGhzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjMyNTY2MjQsImV4cCI6MjAzODgzMjYyNH0.sbD61qzsH0-pxxI1vtb1DfjZ9dpRHFWuV67H2iEX1is';
+String get ksupabaseUrl => _requiredEnv('SUPABASE_URL');
+String get ksupabaseAnonKey => _requiredEnv('SUPABASE_ANON_KEY');
+
+String _requiredEnv(String key) {
+  final value = dotenv.env[key];
+  if (value == null || value.trim().isEmpty) {
+    throw StateError(
+      'Missing environment variable: $key. Add it to your .env file.',
+    );
+  }
+  return value;
+}
